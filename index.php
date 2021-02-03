@@ -14,3 +14,22 @@
  *    Attention, trouvez une solution pour que le fichier contienne du JSON valide !
  * 6. Affichez sur la page index les fichiers ayant déjà été uploadés.
  */
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire d'upload de fichiers</title>
+</head>
+<body>
+    <form action="fileUpload.php" method="POST" enctype="multipart/form-data">
+        <h2>Uploader un Fichier</h2>
+        <label for="fileUpload">Fichier:</label>
+        <input type="file" name="photo" id="fileUpload">
+        <input type="submit" name="submit" value="Upload">
+        <p><strong>Note:</strong> Seuls les formats .jpg, .jpeg, .jpeg, .gif, .png sont autorisés jusqu'à une taille maximale de 5 Mo.</p>
+    </form>
+</body>
+</html>
